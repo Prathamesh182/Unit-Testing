@@ -12,7 +12,7 @@ public class Cell {
 		return mark;
 	}
 
-	public void setMark(Marktype mark) {
+	public void setMark(Marktype mark)throws CellAlreadyMarkerException {
 		if(!isEmpty()) {
 			throw new CellAlreadyMarkerException("Cell is alread full");
 		}
